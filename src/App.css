@@ -1,38 +1,117 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.thing{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.wild{
+  width: 65%;
+}
+.chat{
+  width: 35%;
+}
+.chatt{
+  display: none;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 2px;
+  padding: 2px;
+  height:475px;
+  border-radius: 20px;
+  }
+  .drop{
+    background-color: aqua;
+    
+  }
+  button{
+    position: sticky;
+    bottom: 10%;
+    left: 90%;
+    height: 30px;
+    width:100px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    z-index: 1;
+    
+  }
+  select{
+    margin:10px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: lightblue;
+    border:1px solid blue;
+     
+  }
+  input{
+    background-color: rgb(236, 227, 227);
+    border-radius: 10px;
+    float: right;
+    margin:7px;
+  }
+  .flow {  height: 90px; overflow-y: hidden; position: relative; }
+
+.flow:after { content: '...'; position: absolute; bottom: 0; right: 0; }
+  .grid{
+    display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+    }
+    .gridd{
+      display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+    }
+img{
+  width: 200px;
+  height: 200px;
+  padding-left: 30px;
+  padding-top: 0px
+  ;
+  margin-top: -30px;
+  
+}
+h3{
+  height: 90px;
+}
+h1{
+  padding-top: 0px
+  ;
+  color: rgb(116, 47, 47);
+  margin-top: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  }
+  .gridd{
+    display: grid;
+  grid-template-columns: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  
+  }
+  .wild{
+    width: 50%;
+  }
+  .chat{
+    width: 50%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
